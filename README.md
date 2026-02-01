@@ -13,7 +13,7 @@ Instead of instantly accepting the first AI suggestion, this extension:
 
 ## Features
 
-### 🧠 Reflection panel
+### Reflection panel
 
 Command: **`CT: Reflect on Current Task`** (`ct.reflect.selection`)
 
@@ -56,3 +56,10 @@ Trigger: typing a TypeScript function signature, e.g.:
 export async function fetchWithRetry(url: string, maxRetries: number): Promise<Response> {
   // ...
 }
+
+## Reproducibility
+
+All dependencies are pinned via `package-lock.json`. Generated artefacts such as
+`node_modules`, `dist`, and `.vsix` files are excluded from version control and
+can be recreated locally using standard build commands.
+
